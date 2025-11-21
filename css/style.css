@@ -1,0 +1,43 @@
+/*reset margin and padding for all elements*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*basic styling for header*/
+header {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;  
+    background-color: #f8f8f8;
+    padding: 20px;  
+}
+/*logo styling in header*/
+header img {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 20px;
+}
+/*navigation styling in header */
+header nav {
+    grid-column: 2;
+    text-align: center;
+    margin-top: 10px;
+}
+/*navlist in header*/
+header nav ul {
+    list-style-type: none;
+    margin: 10px;
+}
+/*navlist items in header*/
+header nav ul li {
+    display: inline;
+    margin:10px;
+} 
+/*styling for hero section*/
+section.hero {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    text-align: center;
+    margin: 20px 0;
+}
