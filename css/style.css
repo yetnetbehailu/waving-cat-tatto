@@ -5,22 +5,18 @@
 }
 /*basic styling for header*/
 header {
-    grid-column: 1 / 2;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 1fr;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f8f8f8;
     padding: 20px;  
 }
 /*logo styling in header*/
 header img {
-    grid-column: 1;
-    grid-row: 1;
     padding: 20px;
 }
 /*navigation styling in header */
 header nav {
-    grid-column: 2;
     text-align: center;
     margin-top: 10px;
 }
