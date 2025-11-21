@@ -36,8 +36,6 @@ header nav ul li {
 } 
 /*styling for hero section*/
 section.hero {
-    grid-column: 1 / 2;
-    grid-row: 2;
     text-align: center;
     margin: 20px 0;
 }
