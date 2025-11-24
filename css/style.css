@@ -151,7 +151,7 @@ section.remember {
     margin-top: 1rem;
 }
 
-.faq-category article {
+.faq-item {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.6rem 1rem;
@@ -159,7 +159,7 @@ section.remember {
 }
 
 
-.faq-category article:hover {
+.faq-category .faq-item:hover {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
