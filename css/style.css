@@ -31,6 +31,8 @@ header nav ul li {
     display: inline;
     margin:10px;
 } 
+
+/*start for the layout of the index.html page*/
 /*layout for hero section*/
 section.hero {
     display: flex;
@@ -64,4 +66,66 @@ section.our-tattoo-artists {
     justify-content: center;
     align-items: center;
     gap: 20px;
+} 
+
+/*start for the layout of the book.html page*/
+section.book-appointment {
+    text-align: center;
+    margin: 20px 0;
+}
+/*layout for hero section*/
+section.hero-book-page {
+    animation: slideshow 45s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+/*slideshow animation for hero section*/   
+@keyframes slideshow {
+    0%   { background-image: url(../images/female-artist-ai.jpg); }
+    20%  { background-image: url(../images/sleeve-tattoo-pexels-kevinbidwell.jpg); }
+    40%  { background-image: url(../images/male-artist-ai.jpg); }
+    65%  { background-image: url(../images/bw-sketches-pexels-cottonbro.jpg); }
+    80%  { background-image: url(../images/female-artist-2-ai.jpg); }   
+    100% { background-image: url(../images/female-artist-ai.jpg); } 
+}
+/*layout for booking information section with a grid to postion the sections*/
+section.book-info {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    text-align: center;
+    margin: 20px 0;
+}  
+/*layout for step by step booking section*/ 
+section.step-by-step-booking {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    text-align: left;
+    margin: 20px 40px;   
+}
+/*layout for form section*/
+section.form-section {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    text-align: left;
+    margin: 20px 40px;
+}
+/*layout for test idea section*/
+section.test-ideas {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    text-align: left;
+    margin: 20px 40px;
+}
+/*layout for remember section*/
+section.remember {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    text-align: left;
+    margin: 20px 40px;
 }   
+   
