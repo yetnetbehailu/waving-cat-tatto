@@ -133,7 +133,45 @@ section.remember {
     text-align: left;
     margin: 20px 40px;
 }   
-   
+
+/* Hitta hit styling */
+
+.find-us-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.find-us-intro {
+    text-align: center;
+    max-width: 35rem;
+    margin: 1rem auto;
+}
+
+/* flex layout to structure find us information */
+.find-us-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.find-us-row-center {
+    justify-content: center;
+}
+
+.find-us-row section {
+    flex: 1;
+    min-width: 15rem;
+    max-width: 17rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.find-us-row h2 {
+    margin-bottom: 0.3rem;
+}
 
 /* FAQ styling */
 
