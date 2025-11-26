@@ -28,40 +28,29 @@
         </nav>
     </header>
     <!--main content on the site-->
-     <main>
+     <main class="main-content">
         <!--section for the hero image on top of the page-->
         <section class="hero-book-page">
-            <h2>Boka tid</h2>
+            <!--image slideshow set in css-->
         </section>
         <!--section for the welcome text and description of the tattoo studio-->
         <section class="book-appointment">
-            <h1>Vill du boka tid hos oss? Vad kul!</h1>
-            <p>Vi vill att din tatuering ska kännas både genomtänkt och personlig. Därför börjar varje bokning med att du berättar lite om din idé.</p>
+            <h1 class="h1">Vill du boka tid hos oss? Vad kul!</h1>
+            <h2 class="h2">Vi vill att din tatuering ska kännas både genomtänkt och personlig.</h2>
+            <h3> Därför börjar varje bokning med att du berättar lite om din idé.</h3>
         </section>
         <section class="book-info">
-            <!--section for the text about their values the charity-->
-            <section class="step-by-step-booking">
-                <ul>Så gör du:
-                    <li>Beskriv ditt motiv</li>
-                        <ul>Berätta gärna med egna ord vad du vill tatuera. Det kan vara allt från ett tydligt motiv till en känsla eller symbol.</ul>
-                    <li>Skicka gärna referensbilder</li>
-                        <ul>Det hjälper oss att förstå stil och uttryck. Du kan ladda upp bilder direkt i bokningsformuläret eller länka till bilder du inspireras av.</ul>
-                    <li>Välj tatuerare</li>
-                        <ul>Om du redan vet vem du vill gå till - skriv det. Om du är osäker hjälper vi dig hitta den tatuerare vars stil passar din idé bäst.</ul>   
-                    <li>Placering & storlek</li>    
-                        <ul>Ungefärlig placering på kroppen och ungefärlig storlek i centimeter eller jämförelse (t.ex. "handflata stor").</ul>  
-                    <li>Vi återkommer med pris & tidsförslag</li>
-                        <ul>När vi fått din förfrågan återkommer vi med ungefärligt pris, hur lång tid tatueringen tar och förslag på tider.</ul>   
-                </ul>
-            </section>  
             <!--section for the form to be filled in-->
             <section class="form-section">
                 <form class="form-information">
-                    <label for="motif-description">Beskriv ditt motiv:</label><br>
-                    <textarea id="motif-description" name="motif-description" rows="4" cols="50" placeholder="Skriv din beskrivning här..."></textarea><br><br>
-                    <label for="reference-images">Ladda upp referensbilder:</label><br>
-                    <input type="file" id="reference-images" name="reference-images" accept="image/*" multiple><br><br>
-                    <label for="tattoo-artist">Välj tatuerare:</label><br>
+                    <label>Beskriv ditt motiv:</label>
+                    <p class="form">Berätta gärna med egna ord vad du vill tatuera.<br> Det kan vara allt från ett tydligt motiv till en känsla eller symbol.</p>
+                    <textarea rows="5" cols="70" placeholder="Skriv din beskrivning här..."></textarea><br><br>
+                    <label>Ladda upp referensbilder: </label>
+                    <p class="form">Det hjälper oss att förstå stil och uttryck.<br> Du kan ladda upp bilder direkt i bokningsformuläret eller länka till bilder du inspireras av.</p>
+                    <input class="pick-file" type="button" value="Välj filer"><br><br>
+                    <label >Välj tatuerare:</label>
+                    <p class="form"> Om du redan vet vem du vill gå till - skriv det.<br> Om du är osäker hjälper vi dig hitta den tatuerare vars stil passar din idé bäst.</p>
                     <select id="tattoo-artist" name="tattoo-artist">
                         <option value="">--Välj en tatuerare--</option>
                         <option value="elsa">Elsa</option>
@@ -69,24 +58,28 @@
                         <option value="robin">Robin</option>
                         <option value="sophie">Sophie</option>
                     </select><br><br>
-                    <label for="placement-size">Placering & storlek:</label><br>
-                    <input type="text" id="placement-size" name="placement-size" placeholder="T.ex. 'Överarmen, ca 10 cm'"><br><br>
-                    <input type="submit" value="Skicka förfrågan">
+                    <label>Placering & storlek:</label>
+                    <p class="form">Ungefärlig placering på kroppen och ungefärlig storlek i centimeter eller jämförelse (t.ex. "handflata stor").</p>
+                    <textarea rows="2" cols="70" placeholder="T.ex. 'Överarmen, ca 10 cm'"></textarea><br><br>
+                    <label>När vi fått din förfrågan återkommer vi med ungefärligt pris,<br> hur lång tid tatueringen tar och förslag på tider.</label><br><br>
+                    <input class="send-request" type="button" value="Skicka förfrågan">
                 </form>
             </section>
-            <section class="test-ideas"> 
-                <h4>Vill du bara bolla idéer först?</h4>
-                <p>Du kan också boka en gratis konsultation i studion. Då pratar vi igenom din idé tillsammans och skapar en plan innan vi bokar själva tatueringen.</p>
-            </section>
-            <section class="remember"> 
-                <h4>Kom ihåg!</h4> 
-                <p>Vi skänker 20% av priset på varje tatuering till välgörenhet, och du väljer själv vilken organisation pengarna går till.</p>
-            </section>
+            <div class="bottom-sections">
+                <section class="test-ideas"> 
+                    <h3>Vill du bara bolla idéer först?</h3>
+                    <p>Du kan också boka en gratis konsultation i studion. Då pratar vi igenom din idé tillsammans och skapar en plan innan vi bokar själva tatueringen.</p>
+                </section>
+                <section class="remember"> 
+                    <h3>Kom ihåg!</h3> 
+                    <p>Vi skänker 20% av priset på varje tatuering till välgörenhet, och du väljer själv vilken organisation pengarna går till.</p>
+                </section>
+            </div>
         </section>
     </main>
     <!--footer area with copyright-->
-    <footer>
-        <p>&copy; 2024 Waving Cat Tattoo. Alla rättigheter förbehållna.</p> 
+    <footer  class="footer">
+        <p>&copy; 2025 Waving Cat Tattoo. Alla rättigheter förbehållna.</p> 
     </footer>
 </body>
 </html>
