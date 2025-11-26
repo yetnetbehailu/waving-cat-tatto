@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+:root {
+    --bg-color: #ECE2D8;
+    --text-color: #25555a;
+    --pink: #D88198;
+    --mustard-yellow:#E5C376;
+    --green: #2D676D;
+
+    --primary-font: 'Arial', sans-serif;
+}
+
 html {
     font-size: 16px; 
     line-height: 1.6rem;
