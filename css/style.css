@@ -19,7 +19,7 @@ header {
 }
 /*logo styling in header*/
 header img {
-    width: 100%;
+    width: 50px;
     display: block;
 }
 /*navigation styling in header */
