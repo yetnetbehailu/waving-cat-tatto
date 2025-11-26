@@ -6,7 +6,7 @@
 
 html {
     font-size: 16px; 
-    line-height: 1.6;
+    line-height: 1.6rem;
 }
 
 /*basic styling for header*/
@@ -40,7 +40,7 @@ header nav ul li {
 
 /*start for the layout of the index.html page*/
 /*layout for hero section*/
-section.hero {
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,24 +48,25 @@ section.hero {
     background-size: cover;
     background-position: center;
     height: 600px;
+    margin-bottom: 2rem;
 }
-section.hero h3 {
+.hero h3 {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 5px;
 }
 /*layout for welcome text*/
-section.welcome-text {
+.welcome-text {
     text-align: center; 
 }
 /*layout for charity section*/
-section.charity {
+.charity {
     text-align: center;
     margin: 20px 0;
 }
 /*layout for tattoo artists section*/
-section.our-tattoo-artists {
+.our-tattoo-artists {
     text-align: center;
     margin: 20px 0;
     display: flex;
@@ -75,12 +76,12 @@ section.our-tattoo-artists {
 } 
 
 /*start for the layout of the book.html page*/
-section.book-appointment {
+.book-appointment {
     text-align: center;
     margin: 20px 0;
 }
 /*layout for hero section*/
-section.hero-book-page {
+.hero-book-page {
     animation: slideshow 45s infinite;
     display: flex;
     justify-content: center;
@@ -99,7 +100,7 @@ section.hero-book-page {
     100% { background-image: url(../images/female-artist-ai.jpg); } 
 }
 /*layout for booking information section with a grid to postion the sections*/
-section.book-info {
+.book-info {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: auto;
@@ -107,28 +108,28 @@ section.book-info {
     margin: 20px 0;
 }  
 /*layout for step by step booking section*/ 
-section.step-by-step-booking {
+.step-by-step-booking {
     grid-column: 1 / 2;
     grid-row: 1;
     text-align: left;
     margin: 20px 40px;   
 }
 /*layout for form section*/
-section.form-section {
+.form-section {
     grid-column: 2 / 3;
     grid-row: 1;
     text-align: left;
     margin: 20px 40px;
 }
 /*layout for test idea section*/
-section.test-ideas {
+.test-ideas {
     grid-column: 1 / 2;
     grid-row: 2;
     text-align: left;
     margin: 20px 40px;
 }
 /*layout for remember section*/
-section.remember {
+.remember {
     grid-column: 2 / 3;
     grid-row: 2;
     text-align: left;
