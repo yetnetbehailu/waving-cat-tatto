@@ -140,6 +140,14 @@ section.remember {
 .find-us-title {
     text-align: center;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*https://pixabay.com/photos/travel-pinned-pinning-maps-atlas-2650303/*/
+    background-image: url(../images/map.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
 }
 
 .find-us-intro {
