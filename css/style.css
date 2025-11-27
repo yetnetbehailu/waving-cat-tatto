@@ -429,4 +429,31 @@ img.gallery:hover {
     color: var(--black);
     padding: 1rem;
     margin-top: 3rem;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-hours,
+.footer-transportation {
+    flex: 1;
+    max-width: 400px;
+
+}
+
+.footer-copy {
+    margin-top: 1.5rem;
 }
