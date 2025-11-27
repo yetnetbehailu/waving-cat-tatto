@@ -92,7 +92,7 @@ header nav ul li a {
     padding: 10px 20px;
     margin-top: 200px;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
     align-self: center;
     width: 40ch;
  }
@@ -123,7 +123,8 @@ header nav ul li a {
 
 /*layout for welcome text*/
 .welcome-text {
-    text-align: center;
+    text-align: left;
+    margin-left: 25%;
     padding: 20px;
 }
 
@@ -243,14 +244,14 @@ header nav ul li a {
 }
 /*layout for test idea section*/
 .test-ideas {
-    text-align: center;
+    text-align: left;
     width: 440px;
     padding: 20px;
     border: #25555a solid 2px;
 }
 /*layout for remember section*/
 .remember {
-    text-align: center;
+    text-align: left;
     width: 440px;
     padding: 20px;  
     border: #25555a solid 2px;
