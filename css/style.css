@@ -419,6 +419,25 @@ img.gallery {
     align-items: center;
     gap: 1rem;
 }
+
+/*about us styling*/
+main .about-us{
+    background-color:#D88198;
+}
+tattoo-container {
+    display: grid;
+    grid-template-columns:  1fr;
+}
+
+.tattoo {
+border: 2px solid black;
+border-radius: 8px;
+}
+.tattoo img {
+    width: 400px;
+    height: 400px;
+}
+
 /*layout for footer*/
 .footer {
     background-color: var(--pink);
