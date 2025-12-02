@@ -2,6 +2,7 @@
 <html lang="sv">
 
 <!-- Set metadata, title and link to CSS-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,31 @@
 </head>
 
 <body>
+    <!--header section with logotype and navigation-->
+    <header>
+        <!--logotype that takes you to the homepage-->
+        <div class="logotype">
+            <a href="index.html"><img src="images/logotype-text.png" alt="Waving cat tattoo logo"></a>
+        </div>
+        <!--navigation menu-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="book.html">Boka tid</a></li>
+                <li><a href="gallery.html">Galleri</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="find-us.html">Hitta hit</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-- FAQ main page content-->
     <main>
+        <!--section for the hero image on top of the page-->
+        <section class="hero-book-page">
+            <!--image slideshow set in css-->
+        </section>
         <section class="faq-container">
             <h1 class="faq-title">Vanliga frågor (FAQ)</h1>
             <!-- FAQ sectioned into thematic categorize with questions presented as individual article-items -->
@@ -59,7 +83,8 @@
                 </div>
 
                 <div class="faq-item">
-                    <h3>Hur gammal måste jag vara för att tatuera mig hos er? <span class="expand-icon">&#43;</span></h3>
+                    <h3>Hur gammal måste jag vara för att tatuera mig hos er? <span class="expand-icon">&#43;</span>
+                    </h3>
                 </div>
             </section>
 
@@ -85,6 +110,36 @@
         </section>
     </main>
 
+    <!--footer area with copyright-->
+    <footer class="footer">
+        <div class="footer-info">
+            <address class="footer-contact">
+                <p>
+                    <b>Adress</b><br>
+                    Wavingcatvägen 1<br>
+                    123 45 Göteborg <br>
+                </p>
+                <p><b>Kontakt</b><br>
+                    E post: <a href="mailto:wavingcat@tattoo.se">wavingcat@tattoo.se</a> <br>
+                    Instagram: <a href="#" target="_blank">wavingcat@tattoo.se</a>
+                </p>
+            </address>
+    
+            <div class="footer-hours">
+                <p><b>Öppettider</b></p>
+                <p>Endast tidsbokning, kontakta oss så bokar vi en kostnadsfri konsultation.
+                </p>
+            </div>
+    
+            <div class="footer-transportation">
+                <p><b>Hitta hit</b></p>
+                <p>Vi ligger ett par minuters promenad från Göte.C hållplats, med flertal förbindelser och färdmedel.
+                </p>
+            </div>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 Waving Cat Tattoo. Alla rättigheter förbehållna.</p>
+    </footer>
 </body>
 
 </html>
