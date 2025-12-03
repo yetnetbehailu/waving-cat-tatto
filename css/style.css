@@ -428,10 +428,7 @@ div.gallery {
     justify-content: center;
     gap: 2rem;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 5rem auto;
 }
 .gallery1, .gallery2, .gallery3, .gallery4, .gallery5, .gallery6, .gallery7, .gallery8, .gallery9 {
     padding: 1rem;
@@ -648,4 +645,8 @@ main.about h3{
 }
 .activepage {
     text-decoration: underline;
+}
+img.pin {
+    height: 50px;
+    padding: 1rem;
 }
