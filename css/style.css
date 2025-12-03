@@ -465,7 +465,132 @@ img.gallery:hover {
     gap: 1rem;
 }
 
+/*about us styling*/
+
+/*h1, h2 styling main*/
+main.about h1{
+    padding: 80px;
+    text-align: left
+}
+main.about h3{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+/*style for container*/
+.artist-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.artist-row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.artist-row-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    width: 100%;
+}
+
+.artist-row-text {
+    max-width: 700px;
+    text-align: center;
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.artist img,
+.tattoo img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+}
+
+.text p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.tattoo figure {
+    text-align: center;
+}
+
+.tattoo img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.tattoo figcaption {
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+/*section style for donations to differnt organisations*/
+.organisation{
+    margin: 30px auto;
+    padding: 100px 20px;
+    text-align: center;
+    line-height: 1.8;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.organisation h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.organisation h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*style for the organisations*/
+.organisation ul{
+    border: 2px solid #D88198;
+    border-radius: 100px;
+    list-style: none;
+    text-align: center;
+}
+
+.organisation li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.organisation p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+/*layout for footer*/
+
 /* Footer styling */
+
 .footer {
     background-color: var(--pink);
     color: var(--black);
