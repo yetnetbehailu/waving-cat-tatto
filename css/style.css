@@ -134,7 +134,7 @@ header nav ul li a {
 /*layout for welcome text*/
 .welcome-text {
     text-align: left;
-    margin-left: 25%;
+    margin: 0 auto;
     padding: 20px;
     width: 85ch;
 }
