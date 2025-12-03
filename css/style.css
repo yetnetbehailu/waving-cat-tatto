@@ -73,6 +73,10 @@ header nav ul li a {
     font-weight: bold;
 }
 
+.activepage {
+    text-decoration: underline;
+}
+
 /*start for the layout of the index.html page*/
 .main-content {
     background-color: var(--bg-color);
@@ -630,23 +634,14 @@ main.about h3{
     padding: 0.5rem 0;
 }
 
-.footer-contact {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-around;
-    flex: 1;
-    min-width: 200px;
-}
-
-.footer-hours,
+.footer-contact, .footer-hours,
 .footer-transportation {
     flex: 1;
     max-width: 400px;
-
 }
 
 .footer-copy {
-    margin-top: 1rem;
+    margin-top: 0.2rem;
 }
 
 /* Remove default styling on contact links replace with custom animated underline on hover */
@@ -670,10 +665,8 @@ main.about h3{
 .footer-contact a:hover::after {
     width: 100%;
 }
-.activepage {
-    text-decoration: underline;
-}
+
 img.pin {
     height: 50px;
-    padding: 1rem;
+    padding: 0.25rem;
 }
