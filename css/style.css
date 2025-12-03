@@ -71,10 +71,27 @@ header nav ul li a {
     text-decoration: none;   
     font-size: 1.2rem  ;   
     font-weight: bold;
+    display: inline-block;
+    position: relative;
 }
-
+header nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--black);
+    transform-origin: bottom right;
+    transition: transform 0.30s ease;
+}
+header nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 .activepage {
-    text-decoration: underline;
+    font-style: italic;
 }
 
 /*start for the layout of the index.html page*/
@@ -136,7 +153,26 @@ header nav ul li a {
     padding: 15px 30px;
     border-radius: 5px;
     font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
 }
+a.booknow::after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 15px;
+    left: 30px;
+    background-color: var(--black);
+    transform-origin: bottom right;
+    transition: transform 0.30s ease;
+}
+a.booknow:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 /*layout for welcome text*/
 .welcome-text {
     text-align: left;
@@ -471,7 +507,7 @@ div.gallery {
     padding: 1rem;
     width: 300px;
     height: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--green);
     border-radius: 8px;
 }
 img.gallery {
@@ -490,6 +526,7 @@ img.gallery:hover {
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
+    border: 2px solid var(--pink);
 }
 .gallery9 {
     display: flex;
@@ -497,6 +534,10 @@ img.gallery:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    border: 2px solid var(--pink);
+}
+.gallerybold {
+    font-weight: bold;
 }
 
 /*about us styling*/
@@ -675,4 +716,33 @@ main.about h3{
 img.pin {
     height: 50px;
     padding: 0.25rem;
+}
+img.pin:hover {
+    transform: scale(1.1); 
+}
+/*länk-styling*/
+a.animate:link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color);
+}
+a.animate:link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--black);
+  transform-origin: bottom right;
+  transition: transform 0.30s ease;
+}
+a.animate:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+a.animate:visited {
+    color: var(--pink);
 }
