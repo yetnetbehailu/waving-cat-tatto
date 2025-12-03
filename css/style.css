@@ -11,6 +11,7 @@
     --mustard-yellow:#E5C376;
     --green: #2D676D;
     --black:#040203;
+    --light-mustard: #ead39f;
 
     --primary-font: 'Arial', sans-serif;
 }
@@ -70,6 +71,10 @@ header nav ul li a {
     text-decoration: none;   
     font-size: 1.2rem  ;   
     font-weight: bold;
+}
+
+.activepage {
+    text-decoration: underline;
 }
 
 /*start for the layout of the index.html page*/
@@ -399,10 +404,9 @@ select {
 .faq-item {
     border: 2px solid var(--green);
     border-radius: 5px;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 0 0;
     margin-top: 0.5rem;
 }
-
 
 .faq-item:hover {
     background-color: var(--mustard-yellow);
@@ -411,15 +415,42 @@ select {
     border: none;
 }
 
-.faq-category h3 {
+.faq-item summary{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 0.6rem;
 }
 
-.faq-category .expand-icon {
-    font-size: x-large;
+/* Remove default marker on summary element and replace with custom content */
+.faq-item summary::marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-right: 0.5rem;
+}
+
+.faq-item[open] summary::after {
+    content: "-";
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Add different styling for when details summary unfolds */
+.faq-item[open]{
+    background-color: var(--mustard-yellow);
+}
+
+.faq-item[open] p{
+    border-top: 1px solid var(--green);
+    padding: 0.6rem 1rem;
+    background-color: var(--light-mustard);
 }
 
 /*gallery styling*/
@@ -609,23 +640,14 @@ main.about h3{
     padding: 0.5rem 0;
 }
 
-.footer-contact {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-around;
-    flex: 1;
-    min-width: 200px;
-}
-
-.footer-hours,
+.footer-contact, .footer-hours,
 .footer-transportation {
     flex: 1;
     max-width: 400px;
-
 }
 
 .footer-copy {
-    margin-top: 1rem;
+    margin-top: 0.2rem;
 }
 
 /* Remove default styling on contact links replace with custom animated underline on hover */
@@ -649,10 +671,8 @@ main.about h3{
 .footer-contact a:hover::after {
     width: 100%;
 }
-.activepage {
-    text-decoration: underline;
-}
+
 img.pin {
     height: 50px;
-    padding: 1rem;
+    padding: 0.25rem;
 }
