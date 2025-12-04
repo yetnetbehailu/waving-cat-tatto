@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv ">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
         <ul>
           <li><a href="index.html">Hem</a></li>
           <li><a href="book.html">Boka tid</a></li>
-          <li><a href="gallery.html">Galleri</a></li>
+          <li><a class="activepage" href="gallery.html">Galleri</a></li>
           <li><a href="about.html">Om oss</a></li>
           <li><a href="find-us.html">Hitta hit</a></li>
           <li><a href="faq.html">FAQ</a></li>
@@ -30,8 +30,10 @@
       </nav>
     </header>
     <!--main content of site-->
-    <main class="gallery">
+    <main>
+      <h1 class="galleryheading">Galleri</h1>
       <!--Del med kort textinnehåll-->
+      <div class="gallery">
       <section class="gallery1">
         <p>
           Här kan du utforska vårt arbete och få en känsla för våra olika stilar
@@ -116,28 +118,24 @@
       </figure>
       <!--Del om tatuerarna och fake-länkar till deras portfolio-->
       <section class="gallery9">
-        <p>Bläddra bland tidigare projekt från:</p>
+        <p class="gallerybold">Bläddra bland tidigare projekt från:</p>
         <ul>
-          <li><a href="about.html">Lisa - Minimalistiskt & Fineline</a></li>
-          <li><a href="about.html">Elsa - New School</a></li>
-          <li><a href="about.html">Sophie - Old School</a></li>
-          <li><a href="about.html">Robin - Realism</a></li>
+          <li><a class="animate" href="about.html">Lisa - Minimalistiskt & Fineline</a></li>
+          <li><a class="animate" href="about.html">Elsa - New School</a></li>
+          <li><a class="animate" href="about.html">Sophie - Old School</a></li>
+          <li><a class="animate" href="about.html">Robin - Realism</a></li>
         </ul>
       </section>
+      </div>
     </main>
 
     <!--footer area with copyright-->
     <footer class="footer">
       <div class="footer-info">
           <address class="footer-contact">
-              <p>
-                  <b>Adress</b><br>
-                  Wavingcatvägen 1<br>
-                  123 45 Göteborg <br>
-              </p>
               <p><b>Kontakt</b><br>
                   E post: <a href="mailto:wavingcat@tattoo.se">wavingcat@tattoo.se</a> <br>
-                  Instagram: <a href="#" target="_blank">wavingcat@tattoo.se</a>
+                  Instagram: <a href="#" target="_blank">wavingcattattoo</a>
               </p>
           </address>
   
@@ -148,9 +146,9 @@
           </div>
   
           <div class="footer-transportation">
-              <p><b>Hitta hit</b></p>
-              <p>Vi ligger ett par minuters promenad från Göte.C hållplats, med flertal förbindelser och färdmedel.
-              </p>
+            <p><b>Hitta hit</b></p>
+            <!--Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=162102">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=162102">Pixabay</a>-->
+            <figure><a href="https://maps.app.goo.gl/PhbA2XQjQ6KjVtBA7" target="_blank"><img class="pin" src="images/pin.png" alt="Bild på en pin på en karta"></a></figure>
           </div>
       </div>
 

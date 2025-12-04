@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv ">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Hem</a></li>
-                <li><a href="book.html">Boka tid</a></li>
+                <li><a class="activepage" href="book.html">Boka tid</a></li>
                 <li><a href="gallery.html">Galleri</a></li>
                 <li><a href="about.html">Om oss</a></li>
                 <li><a href="find-us.html">Hitta hit</a></li>
@@ -30,26 +30,26 @@
     <!--main content on the site-->
      <main class="main-content">
         <!--section for the hero image on top of the page-->
-        <section class="hero-book-page">
+        <div class="hero-book-page">
             <!--image slideshow set in css-->
-        </section>
+        </div>
         <!--section for the text to describe how to book-->
         <section class="book-appointment">
             <h1 class="h1">Vill du boka tid hos oss? Vad kul!</h1>
             <h2 class="h2">Vi vill att din tatuering ska kännas både genomtänkt och personlig.</h2>
             <h3> Därför börjar varje bokning med att du berättar lite om din idé.</h3>
         </section>
-        <section class="book-info">
+        <div class="book-info">
             <!--section for the form to be filled in-->
-            <section class="form-section">
+            <div class="form-section">
                 <form class="form-information">
-                    <label>Beskriv ditt motiv:</label>
+                    <label for="tatto-description">Beskriv ditt motiv:</label>
                     <p class="form">Berätta gärna med egna ord vad du vill tatuera.<br> Det kan vara allt från ett tydligt motiv till en känsla eller symbol.</p>
-                    <textarea rows="5" cols="70" placeholder="Skriv din beskrivning här..."></textarea><br><br>
-                    <label>Ladda upp referensbilder: </label>
+                    <textarea rows="5" cols="70" id="tatto-description" name="tatto-description" placeholder="Skriv din beskrivning här..."></textarea><br>
+                    <label for="upload-image">Ladda upp referensbilder: </label>
                     <p class="form">Det hjälper oss att förstå stil och uttryck.<br> Du kan ladda upp bilder direkt i bokningsformuläret eller länka till bilder du inspireras av.</p>
-                    <input class="pick-file" type="button" value="Välj filer"><br><br>
-                    <label >Välj tatuerare:</label>
+                    <input class="pick-file" type="button" for="upload-image" name="upload-image" value="Välj filer"><br>
+                    <label for="tatto-artist">Välj tatuerare:</label>
                     <p class="form"> Om du redan vet vem du vill gå till - skriv det.<br> Om du är osäker hjälper vi dig hitta den tatuerare vars stil passar din idé bäst.</p>
                     <select id="tattoo-artist" name="tattoo-artist">
                         <option value="">--Välj en tatuerare--</option>
@@ -58,13 +58,14 @@
                         <option value="robin">Robin</option>
                         <option value="sophie">Sophie</option>
                     </select><br><br>
-                    <label>Placering & storlek:</label>
+                    <label for="placement-size">Placering & storlek:</label>
                     <p class="form">Ungefärlig placering på kroppen och ungefärlig storlek i centimeter eller jämförelse (t.ex. "handflata stor").</p>
                     <textarea rows="2" cols="70" placeholder="T.ex. 'Överarmen, ca 10 cm'"></textarea><br><br>
                     <label>När vi fått din förfrågan återkommer vi med ungefärligt pris,<br> hur lång tid tatueringen tar och förslag på tider.</label><br><br>
-                    <input class="send-request" type="button" value="Skicka förfrågan">
+                    <a href="confirmation.html" target="_blank" class="send-request" onclick="window.open('confirmation.html', '_blank', 
+                        'width=800,height=400,top=250,left=400,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,status=no');">Skicka förfrågan</a>
                 </form>
-            </section>
+            </div>
             <!--section with extra information-->
             <div class="bottom-sections">
                 <section class="test-ideas"> 
@@ -76,20 +77,15 @@
                     <p>Vi skänker 20% av priset på varje tatuering till välgörenhet, och du väljer själv vilken organisation pengarna går till.</p>
                 </section>
             </div>
-        </section>
+        </div>
     </main>
     <!--footer area with copyright-->
     <footer class="footer">
         <div class="footer-info">
             <address class="footer-contact">
-                <p>
-                    <b>Adress</b><br>
-                    Wavingcatvägen 1<br>
-                    123 45 Göteborg <br>
-                </p>
                 <p><b>Kontakt</b><br>
                     E post: <a href="mailto:wavingcat@tattoo.se">wavingcat@tattoo.se</a> <br>
-                    Instagram: <a href="#" target="_blank">wavingcat@tattoo.se</a>
+                    Instagram: <a href="#" target="_blank">wavingcattattoo</a>
                 </p>
             </address>
     
@@ -101,8 +97,8 @@
     
             <div class="footer-transportation">
                 <p><b>Hitta hit</b></p>
-                <p>Vi ligger ett par minuters promenad från Göte.C hållplats, med flertal förbindelser och färdmedel.
-                </p>
+                <!--Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=162102">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=162102">Pixabay</a>-->
+                <figure><a href="https://maps.app.goo.gl/PhbA2XQjQ6KjVtBA7" target="_blank"><img class="pin" src="images/pin.png" alt="Bild på en pin på en karta"></a></figure>
             </div>
         </div>
         <p class="footer-copy">&copy; 2025 Waving Cat Tattoo. Alla rättigheter förbehållna.</p>

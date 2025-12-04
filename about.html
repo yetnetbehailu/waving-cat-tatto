@@ -7,29 +7,30 @@
     <!--name of the site-->
     <title>About us</title>
      <!--css filen-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-  <!--header section with logotype and navigation-->
-    <header>
-        <!--logotype that takes you to the homepage-->
-        <div class="logotype">
-            <a href="index.html"><img src="images/logotype.png" alt="Waving cat tattoo logo"></a>
-        </div>
-        <!--navigation menu-->
-        <nav>
-            <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="book.html">Boka tid</a></li>
-                <li><a href="gallery.html">Galleri</a></li>
-                <li><a href="about.html">Om oss</a></li>
-                <li><a href="find-us.html">Hitta hit</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+      <!--logotype that takes you to the homepage-->
+      <div class="logotype">
+        <a href="index.html"
+          ><img src="images/logotype-text.png" alt="Waving cat tattoo logo"
+        /></a>
+      </div>
+      <!--navigation menu-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="book.html">Boka tid</a></li>
+          <li><a href="gallery.html">Galleri</a></li>
+          <li><a class="activepage" href="about.html">Om oss</a></li>
+          <li><a href="find-us.html">Hitta hit</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>    
+</header>
 
 <main>
      <h1>Våra tatuerare</h1>
@@ -40,7 +41,7 @@
     <div class="artist-container">
 
         <div class="artist-row">
-            <h3>Lisa - Minimalistiskt & Finline</h3>
+            <h3 id="lisa">Lisa - Minimalistiskt & Finline</h3>
             
             <section class="artist-row-text">
                 <p>Poetiska, detaljrika motiv med mjuka linjer.</p>
@@ -66,7 +67,7 @@
      
      <!--tattoo artist 2-->
         <div class="artist-row">
-            <h3>Elsa - New School</h3>
+            <h3 id="elsa">Elsa - New School</h3>
             
             <section class="artist-row-text">
                 <p>Färgstarka, karaktärsfulla och uttrycksfulla motiv.</p>
@@ -93,7 +94,7 @@
      
      <!--tattoo artist 3-->
         <div class="artist-row">
-            <h3>Sophie - Old School</h3>
+            <h3 id="sophie">Sophie - Old School</h3>
             
             <section class="artist-row-text">
                 <p>Klassiska, tidlösa tatueringar med tydliga linjer och starka färger.</p>
@@ -119,7 +120,7 @@
      
      <!--tattoo artist 4-->
         <div class="artist-row">
-            <h3>Robin - Realism</h3>
+            <h3 id="robin">Robin - Realism</h3>
             
             <section class="artist-row-text">
                 <p>Verklighetstrogna motiv, porträtt och detaljer med djup och precision.</p>
@@ -165,11 +166,6 @@
 <footer class="footer">
     <div class="footer-info">
         <address class="footer-contact">
-            <p>
-                <b>Adress</b><br>
-                Wavingcatvägen 1<br>
-                123 45 Göteborg <br>
-            </p>
             <p><b>Kontakt</b><br>
                 E post: <a href="mailto:wavingcat@tattoo.se">wavingcat@tattoo.se</a> <br>
                 Instagram: <a href="#" target="_blank">wavingcattattoo</a>
@@ -184,8 +180,8 @@
 
         <div class="footer-transportation">
             <p><b>Hitta hit</b></p>
-            <p>Vi ligger ett par minuters promenad från Göte.C hållplats, med flertal förbindelser och färdmedel.
-            </p>
+            <!--Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=162102">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=162102">Pixabay</a>-->
+            <figure><a href="https://maps.app.goo.gl/PhbA2XQjQ6KjVtBA7" target="_blank"><img class="pin" src="images/pin.png" alt="Bild på en pin på en karta"></a></figure>
         </div>
     </div>
 

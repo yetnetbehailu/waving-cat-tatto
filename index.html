@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv ">
-
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +19,7 @@
         <!--navigation menu-->
         <nav>
             <ul>
-                <li><a href="index.html">Hem</a></li>
+                <li><a class="activepage" href="index.html">Hem</a></li>
                 <li><a href="book.html">Boka tid</a></li>
                 <li><a href="gallery.html">Galleri</a></li>
                 <li><a href="about.html">Om oss</a></li>
@@ -33,12 +32,12 @@
     <!--main content on the site-->
      <main class="main-content">
         <!--section for the hero image on top of the page-->
-        <section class="hero">
+        <div class="hero">
             <p class="creative"><strong>Kreativitet</strong>Varje tatuering är unik, skapad med konstnärlig frihet och respekt för individens uttryck.</p>
             <p class="inclusion"><strong>Inkludering</strong>Alla är välkomna hos oss, oavsett bakgrund, kropp, stil eller erfarenhet av tatueringar. Vi skapar en trygg plats för alla.</p>
             <p class="care"><strong>Omtanke</strong>Vi tar hand om våra kunder, vårt samhälle och vår planet. En del av intäkterna går till välgörenhet.</p>
             <a href="book.html" class="booknow">Boka tid</a>
-        </section>
+        </div>
         <!--section for the welcome text and description of the tattoo studio-->
         <section class="welcome-text">
             <h1 class="h1">Välkommen till vår tatueringsstudio!</h1>
@@ -53,50 +52,33 @@
             <p>Vi skänker 20% av priset på varje tatuering till välgörenhet, och du väljer själv vilken organisation pengarna går till.</p>
         </section>
         <!--section for presenting the tattoo artists-->
-        <section class="our-tattoo-artists">
-             <article>
+        <div class="our-tattoo-artists">
                 <figure>
-                    <a href="about.html"><img class="artist-image" src="images/female-artist-pink-ai.jpg" alt="Foto på Elsa, en av studions tatuerare."></a> 
-                    <!--<figcaption>Färgstarka, karaktärsfulla och uttrycksfulla motiv</figcaption>-->
+                    <a href="about.html#elsa"><img class="artist-image" src="images/female-artist-pink-ai.jpg" alt="Foto på Elsa, en av studions tatuerare."></a> 
+                    <figcaption>Elsa - New School</figcaption>
                 </figure>
-                <h3>Elsa - New School</h3>
-            </article>
-             <article>
                 <figure> 
-                    <a href="about.html"><img src="images/female-artist-2-ai.jpg" alt="Foto på Sophie, en av studions tatuerare."></a>              
-                    <!--<figcaption>Klassiska, tidlösa tatueringar och starka färger.</figcaption>-->
+                    <a href="about.html#sophie"><img src="images/female-artist-2-ai.jpg" alt="Foto på Sophie, en av studions tatuerare."></a>              
+                    <figcaption>Sophie - Old School</figcaption>
                 </figure>
-                 <h3>Sophie - Old School</h3>
-            </article>   
-            <article>
                 <figure>
-                    <a href="about.html"><img src="images/female-artist-ai.jpg" alt="Foto på Lisa, en av studions tatuerare."></a>
-                    <!--<figcaption>Poetiska, detaljrika motiv med mjuka linjer.</figcaption>-->
+                    <a href="about.html#lisa"><img src="images/female-artist-ai.jpg" alt="Foto på Lisa, en av studions tatuerare."></a>
+                    <figcaption>Lisa -  Minimalistiskt & Fineline</figcaption>
                 </figure>
-                <h3>Lisa -  Minimalistiskt & Fineline</h3>
-            </article>
-            <article>
                 <figure>
-                    <a href="about.html"><img src="images/male-artist-ai.jpg" alt="Foto på Robin, en av studions tatuerare."></a>
-                    <!--<figcaption>Verklighetstrogna med djup och precision.</figcaption>-->
+                    <a href="about.html#robin"><img src="images/male-artist-ai.jpg" alt="Foto på Robin, en av studions tatuerare."></a>
+                    <figcaption>Robin - Realism</figcaption>
                 </figure>
-                <h3>Robin - Realism</h3>
-            </article> 
-        </section>
+            </div>
     </main>
     
     <!--footer area with copyright-->
     <footer class="footer">
         <div class="footer-info">
             <address class="footer-contact">
-                <p>
-                    <b>Adress</b><br>
-                    Wavingcatvägen 1<br>
-                    123 45 Göteborg <br>
-                </p>
                 <p><b>Kontakt</b><br>
                     E post: <a href="mailto:wavingcat@tattoo.se">wavingcat@tattoo.se</a> <br>
-                    Instagram: <a href="#" target="_blank">wavingcat@tattoo.se</a>
+                    Instagram: <a href="#" target="_blank">wavingcattattoo</a>
                 </p>
             </address>
     
@@ -108,8 +90,8 @@
     
             <div class="footer-transportation">
                 <p><b>Hitta hit</b></p>
-                <p>Vi ligger ett par minuters promenad från Göte.C hållplats, med flertal förbindelser och färdmedel.
-                </p>
+                <!--Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=162102">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=162102">Pixabay</a>-->
+                <figure><a href="https://maps.app.goo.gl/PhbA2XQjQ6KjVtBA7" target="_blank"><img class="pin" src="images/pin.png" alt="Bild på en pin på en karta"></a></figure>
             </div>
         </div>
 
