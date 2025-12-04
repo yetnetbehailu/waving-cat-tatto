@@ -564,12 +564,12 @@ img.gallery:hover {
 /*about us styling*/
 
 /*h1, h3 styling*/
-.about h1{
+h1.about{
     padding: 80px;
     text-align: left;
     margin-top: 20px;
 }
-.about h3{
+h3.about{
     font-size: 20px;
     text-align: center;
     padding: 20px;
