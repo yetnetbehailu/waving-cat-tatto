@@ -230,7 +230,7 @@ a.booknow:hover::after {
 .book-appointment {
     text-align: center
 }
-/*layout for hero section*/
+/* layout for hero image */
 .hero-book-page {
     animation: slideshow 45s infinite;
     display: flex;
@@ -241,7 +241,7 @@ a.booknow:hover::after {
     height: 600px;
     margin-bottom: 3rem;
 }
-/*slideshow animation for hero section*/   
+/* slideshow animation for hero image */
 @keyframes slideshow {
     0%   { background-image: url(../images/female-artist-ai.jpg); }
     20%  { background-image: url(../images/sleeve-tattoo-pexels-kevinbidwell.jpg); }
