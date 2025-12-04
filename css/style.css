@@ -390,7 +390,7 @@ select {
     min-width: 15rem;
     max-width: 17rem;
     padding: 1rem;
-    border: 1px solid var(--green);
+    border: 2px solid var(--green);
     border-radius: 8px;
     text-align: center;
 }
@@ -507,7 +507,7 @@ div.gallery {
     padding: 1rem;
     width: 300px;
     height: 300px;
-    border: 1px solid var(--green);
+    border: 2px solid var(--green);
     border-radius: 8px;
 }
 img.gallery {
