@@ -296,7 +296,7 @@ a.booknow:hover::after {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 .send-request {
     background-color: var(--pink);
@@ -307,10 +307,12 @@ a.booknow:hover::after {
     font-size: 1rem;
     cursor: pointer;
     margin-bottom: 10px;
+    margin-top: 1rem;
 }
 /*styling for textarea in form section*/
 textarea {      
-    padding: 15px;       
+    padding: 15px;
+    margin-bottom: 1rem;       
 }
 /*styling for select in form section*/
 select {
@@ -685,6 +687,7 @@ main.about h3{
 .footer-transportation {
     flex: 1;
     max-width: 400px;
+    font-style: normal;
 }
 
 .footer-copy {

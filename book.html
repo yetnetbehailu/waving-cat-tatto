@@ -43,13 +43,13 @@
             <!--section for the form to be filled in-->
             <div class="form-section">
                 <form class="form-information">
-                    <label>Beskriv ditt motiv:</label>
+                    <label for="tatto-description">Beskriv ditt motiv:</label>
                     <p class="form">Berätta gärna med egna ord vad du vill tatuera.<br> Det kan vara allt från ett tydligt motiv till en känsla eller symbol.</p>
-                    <textarea rows="5" cols="70" placeholder="Skriv din beskrivning här..."></textarea><br><br>
-                    <label>Ladda upp referensbilder: </label>
+                    <textarea rows="5" cols="70" id="tatto-description" name="tatto-description" placeholder="Skriv din beskrivning här..."></textarea><br>
+                    <label for="upload-image">Ladda upp referensbilder: </label>
                     <p class="form">Det hjälper oss att förstå stil och uttryck.<br> Du kan ladda upp bilder direkt i bokningsformuläret eller länka till bilder du inspireras av.</p>
-                    <input class="pick-file" type="button" value="Välj filer"><br><br>
-                    <label >Välj tatuerare:</label>
+                    <input class="pick-file" type="button" for="upload-image" name="upload-image" value="Välj filer"><br>
+                    <label for="tatto-artist">Välj tatuerare:</label>
                     <p class="form"> Om du redan vet vem du vill gå till - skriv det.<br> Om du är osäker hjälper vi dig hitta den tatuerare vars stil passar din idé bäst.</p>
                     <select id="tattoo-artist" name="tattoo-artist">
                         <option value="">--Välj en tatuerare--</option>
@@ -58,10 +58,10 @@
                         <option value="robin">Robin</option>
                         <option value="sophie">Sophie</option>
                     </select><br><br>
-                    <label>Placering & storlek:</label>
+                    <label for="placement-size">Placering & storlek:</label>
                     <p class="form">Ungefärlig placering på kroppen och ungefärlig storlek i centimeter eller jämförelse (t.ex. "handflata stor").</p>
-                    <textarea rows="2" cols="70" placeholder="T.ex. 'Överarmen, ca 10 cm'"></textarea><br><br>
-                    <label>När vi fått din förfrågan återkommer vi med ungefärligt pris,<br> hur lång tid tatueringen tar och förslag på tider.</label><br><br>
+                    <textarea rows="2" cols="70" id="placement-size" name="placement-size" placeholder="T.ex. 'Överarmen, ca 10 cm'"></textarea>
+                    <p>När vi fått din förfrågan återkommer vi med ungefärligt pris,<br> hur lång tid tatueringen tar och förslag på tider.</p>
                     <input class="send-request" type="button" value="Skicka förfrågan">
                 </form>
             </div>
