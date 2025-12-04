@@ -564,12 +564,13 @@ img.gallery:hover {
 /*about us styling*/
 
 /*h1, h3 styling*/
-.tattoo-heading h1{
-    padding: 80px;
-    text-align: left;
-    margin-top: 20px;
+h1.tattoo-heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
 }
-h3.about{
+
+main.about h3{
     font-size: 20px;
     text-align: center;
     padding: 20px;
