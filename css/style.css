@@ -563,13 +563,13 @@ img.gallery:hover {
 
 /*about us styling*/
 
-/*h1, h3 styling main*/
-main.about h1{
+/*h1, h3 styling*/
+.about h1{
     padding: 80px;
     text-align: left;
     margin-top: 20px;
 }
-main.about h3{
+.about h3{
     font-size: 20px;
     text-align: center;
     padding: 20px;
