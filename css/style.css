@@ -115,7 +115,7 @@ header nav ul li a:hover::after {
  .creative, .inclusion, .care {
     font-size: 1.1rem;
     color: var( --black);
-    background-color:rgb(252, 218, 218, 0.4);
+    background-color:rgb(252, 218, 218, 0.6);
     padding: 10px 20px;
     margin-top: 200px;
     border-radius: 5px;
@@ -221,11 +221,8 @@ a.booknow:hover::after {
     font-size: 0.9rem;
     text-align: center;
     margin-bottom: 10px;
-
 }
-.our-tattoo-artists img:hover {
-    transform: scale(1.5); 
-}   
+ 
 /*start for the layout of the book.html page*/
 .book-appointment {
     text-align: center
@@ -286,7 +283,10 @@ a.booknow:hover::after {
 .form{
     font-weight: normal;
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin: auto auto 10px auto;
+    width: 60ch;
+    text-align: center;
+   
 }
 .pick-file {
     background-color: var(--pink);
