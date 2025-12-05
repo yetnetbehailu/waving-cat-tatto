@@ -560,103 +560,26 @@ img.gallery:hover {
 .gallerybold {
     font-weight: bold;
 }
+/*Layout for about*/
 
-/*about us styling*/
-
-/*h1, h3 styling*/
-h1.tattoo-heading{
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-main.about h3{
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
-}
-
-/*style for container*/
-.artist-container {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.artist-row {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-}
-
-.artist-row-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    width: 100%;
-}
-
-.artist-row-text {
-    max-width: 700px;
-    text-align: center;
-}
-
-.artist {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.artist img,
-.tattoo img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.text {
-    display: flex;
-    align-items: center;
-}
-
-.text p {
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-.tattoo figure {
-    text-align: center;
-}
-
-.tattoo img {
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.tattoo figcaption {
-    color: var(--text-color);
-    font-size: 0.95rem;
-}
-/*section style for donations to differnt organisations*/
+/*Layout for the different organisations*/
 .organisation{
-    margin: 30px auto;
-    padding: 100px 20px;
-    text-align: center;
+    margin: 20px auto;
+    padding: 60px 20px;
     line-height: 1.8;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.organisation p{
+    max-width: 700px;
+    margin: 40px;
 }
 
 .organisation h2{
+    margin-top: 5rem;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -666,12 +589,13 @@ main.about h3{
     margin-bottom: 20px;
 }
 
-/*style for the organisations*/
+/*Layout for the list with organisations*/
 .organisation ul{
     border: 2px solid #D88198;
     border-radius: 100px;
     list-style: none;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .organisation li{
@@ -680,10 +604,60 @@ main.about h3{
     padding: 30px;
 }
 
-.organisation p{
-    margin-top: 20px;
+/*h1 style*/
+h1.tattoo-heading{
+    padding: 20px;
+    margin-top: 0.25rem;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Style for the container with all the tattoo artists*/
+.artist-container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Style for the artist header/artist row*/
+.artist-row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/*Artist row images that includes both pictures of the tattoo artist and the correspondning tattoos*/
+.artist-row-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    width: 100%;
+}
+
+/*Paragraphs about the tattoo artist*/
+.artist-row-text {
     max-width: 700px;
+    text-align: left;
+}
+
+/*Layout for all the images*/
+.artist img,
+.tattoo img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid #2D676D;
+    border-radius:10px;
+}
+
+/*Layout for the paragraphs about the tattoo artists*/
+.artist-description{
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 /*layout for footer*/
