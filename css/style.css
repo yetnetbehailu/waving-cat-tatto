@@ -521,7 +521,7 @@ div.gallery {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    width: 70%;
+    width: 80%;
     margin: 5rem auto;
 }
 .gallery1, .gallery2, .gallery3, .gallery4, .gallery5, .gallery6, .gallery7, .gallery8, .gallery9 {
