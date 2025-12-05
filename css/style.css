@@ -455,29 +455,26 @@ select {
 }
 
 .faq-category {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .faq-item {
     border: 2px solid var(--green);
     border-radius: 5px;
     padding: 0.6rem 0 0;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .faq-item:hover {
     background-color: var(--mustard-yellow);
-    box-shadow: 0 1px 8px rgb(180 169 145);
-    cursor: pointer;
-    border: none;
 }
 
 .faq-item summary{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
-    margin-bottom: 0.6rem;
+    padding: 0 1rem 0.6rem;
+    cursor: pointer;
 }
 
 /* Remove default marker on summary element and replace with custom content */
