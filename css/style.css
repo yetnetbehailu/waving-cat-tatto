@@ -255,6 +255,7 @@ a.booknow:hover::after {
 /*start for the layout of the book.html page*/
 .book-appointment {
     text-align: center;
+    padding: 20px;
 }
 
 /* layout for hero image */
