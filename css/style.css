@@ -5,32 +5,35 @@
 }
 
 :root {
-    --bg-color: #ECE2D8;
+    --bg-color: #ece2d8;
     --text-color: #25555a;
-    --pink: #D88198;
-    --mustard-yellow:#E5C376;
-    --green: #2D676D;
-    --black:#040203;
+    --pink: #d88198;
+    --mustard-yellow: #e5c376;
+    --green: #2d676d;
+    --black: #040203;
     --light-mustard: #ead39f;
 
-    --primary-font: 'Arial', sans-serif;
+    --primary-font: "Arial", sans-serif;
 }
 
 html {
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 1.6rem;
     font-family: var(--primary-font);
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+
 .h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+
 .h2 {
     font-size: 1.6rem;
     margin-bottom: 20px;
 }
+
 .h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -42,38 +45,43 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--pink);
-    padding: 20px;  
+    padding: 20px;
 }
+
 /*logo styling in header*/
 header img {
     width: 300px;
     display: block;
 }
+
 /*navigation styling in header */
 header nav {
     text-align: center;
     margin-top: 10px;
 }
+
 /*navlist in header*/
 header nav ul {
     list-style-type: none;
     margin: 10px;
 }
+
 /*navlist items in header*/
 header nav ul li {
     display: inline;
-    margin:10px;
+    margin: 10px;
+}
 
-} 
 header nav ul li a {
     font-family: var(--primary-font);
     color: var(--black);
-    text-decoration: none;   
-    font-size: 1.2rem  ;   
+    text-decoration: none;
+    font-size: 1.2rem;
     font-weight: bold;
     display: inline-block;
     position: relative;
 }
+
 header nav ul li a::after {
     content: "";
     position: absolute;
@@ -84,12 +92,14 @@ header nav ul li a::after {
     left: 0;
     background-color: var(--black);
     transform-origin: bottom right;
-    transition: transform 0.30s ease;
+    transition: transform 0.3s ease;
 }
+
 header nav ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 .activepage {
     font-style: italic;
 }
@@ -99,6 +109,7 @@ header nav ul li a:hover::after {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+
 /*layout for hero section with bg-image and text overlay*/
 .hero {
     display: grid;
@@ -108,43 +119,53 @@ header nav ul li a:hover::after {
     height: 600px;
     margin-bottom: 4rem;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:auto auto;
+    grid-template-rows: auto auto;
     gap: 30px;
- }
- /*layout for text overlays in hero section*/
- .creative, .inclusion, .care {
+}
+
+/*layout for text overlays in hero section*/
+.creative,
+.inclusion,
+.care {
     font-size: 1.1rem;
-    color: var( --black);
-    background-color:rgb(252, 218, 218, 0.6);
+    color: var(--black);
+    background-color: rgb(252, 218, 218, 0.6);
     padding: 10px 20px;
     margin-top: 200px;
     border-radius: 5px;
     text-align: left;
     align-self: center;
     width: 40ch;
- }
- /*layout for strong elements in text overlays*/
- .creative strong, .inclusion strong, .care strong {
+}
+
+/*layout for strong elements in text overlays*/
+.creative strong,
+.inclusion strong,
+.care strong {
     display: block;
     text-align: center;
     font-size: 1.3rem;
     margin-bottom: 5px;
- }
+}
+
 .creative {
-    grid-column: 1 / 2  ;
+    grid-column: 1 / 2;
     justify-self: center;
 }
+
 .inclusion {
-    grid-column: 2 / 3 ;
-    justify-self: center;
-}   
-.care {
-    grid-column: 3 / 4 ;
+    grid-column: 2 / 3;
     justify-self: center;
 }
+
+.care {
+    grid-column: 3 / 4;
+    justify-self: center;
+}
+
 /*layout for book now button in hero section*/
 .booknow {
-    grid-column: 1 / 4 ;
+    grid-column: 1 / 4;
     justify-self: center;
     align-self: center;
     text-decoration: none;
@@ -156,6 +177,7 @@ header nav ul li a:hover::after {
     display: inline-block;
     position: relative;
 }
+
 a.booknow::after {
     content: "";
     position: absolute;
@@ -166,8 +188,9 @@ a.booknow::after {
     left: 30px;
     background-color: var(--black);
     transform-origin: bottom right;
-    transition: transform 0.30s ease;
+    transition: transform 0.3s ease;
 }
+
 a.booknow:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -180,15 +203,18 @@ a.booknow:hover::after {
     padding: 20px;
     width: 85ch;
 }
+
 /*center h1 in welcome text section*/
-.welcome-text   h1  {
+.welcome-text h1 {
     text-align: center;
 }
+
 /*center h2 in welcome text section*/
 .welcome-text h2 {
     text-align: center;
     line-height: 2.5rem;
 }
+
 /*layout for tattoo artists section*/
 .our-tattoo-artists {
     text-align: center;
@@ -198,15 +224,17 @@ a.booknow:hover::after {
     justify-content: center;
     padding: 20px;
     margin: 0 auto;
-}   
+}
+
 .our-tattoo-artists img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-    transition: transform .2s;
+    transition: transform 0.2s;
     margin-top: 20px;
-}  
+}
+
 .our-tattoo-artists figure {
     display: flex;
     flex-direction: column;
@@ -215,18 +243,20 @@ a.booknow:hover::after {
     border: 2px solid var(--pink);
     border-radius: 8px;
     margin: 15px;
-}    
+}
+
 .our-tattoo-artists figcaption {
     font-weight: bold;
     font-size: 0.9rem;
     text-align: center;
     margin-bottom: 10px;
 }
- 
+
 /*start for the layout of the book.html page*/
 .book-appointment {
-    text-align: center
+    text-align: center;
 }
+
 /* layout for hero image */
 .hero-book-page {
     animation: slideshow 45s infinite;
@@ -238,37 +268,54 @@ a.booknow:hover::after {
     height: 600px;
     margin-bottom: 3rem;
 }
+
 /* slideshow animation for hero image */
 @keyframes slideshow {
-    0%   { background-image: url(../images/female-artist-ai.jpg); }
-    20%  { background-image: url(../images/sleeve-tattoo-pexels-kevinbidwell.jpg); }
-    40%  { background-image: url(../images/male-artist-ai.jpg); }
-    65%  { background-image: url(../images/bw-sketches-pexels-cottonbro.jpg); }
-    80%  { background-image: url(../images/female-artist-2-ai.jpg); }   
-    100% { background-image: url(../images/female-artist-ai.jpg); } 
+    0% {
+        background-image: url(../images/female-artist-ai.jpg);
+    }
+    20% {
+        background-image: url(../images/sleeve-tattoo-pexels-kevinbidwell.jpg);
+    }
+    40% {
+        background-image: url(../images/male-artist-ai.jpg);
+    }
+    65% {
+        background-image: url(../images/bw-sketches-pexels-cottonbro.jpg);
+    }
+    80% {
+        background-image: url(../images/female-artist-2-ai.jpg);
+    }
+    100% {
+        background-image: url(../images/female-artist-ai.jpg);
+    }
 }
+
 /*layout for booking information section with a grid to postion the sections*/
 .book-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}  
-/*layout for step by step booking section*/ 
+}
+
+/*layout for step by step booking section*/
 .step-by-step-booking {
-    text-align: left;   
+    text-align: left;
     padding: 40px;
     margin-left: 100px;
 }
 
 .step-by-step-booking ul {
     list-style-type: decimal;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
+
 .step-by-step-booking li {
     font-weight: bold;
     margin-top: 5px;
 }
+
 /*layout for form section*/
 .form-section {
     width: 800px;
@@ -280,15 +327,16 @@ a.booknow:hover::after {
     border-radius: 8px;
     margin: 40px auto;
 }
-.form{
+
+.form {
     font-weight: normal;
     font-size: 1rem;
     margin: auto auto 10px auto;
     width: 60ch;
     text-align: center;
-   
 }
-.textform{
+
+.textform {
     font-weight: normal;
     font-size: 1rem;
     max-width: 60ch;
@@ -296,6 +344,7 @@ a.booknow:hover::after {
     display: block;
     margin: auto auto 10px auto;
 }
+
 .pick-file {
     background-color: var(--pink);
     color: var(--black);
@@ -306,6 +355,7 @@ a.booknow:hover::after {
     margin-bottom: 10px;
     margin-left: auto;
 }
+
 .send-request {
     display: inline-block;
     background-color: var(--pink);
@@ -320,6 +370,7 @@ a.booknow:hover::after {
     cursor: pointer;
     position: relative;
 }
+
 a.send-request::after {
     content: "";
     position: absolute;
@@ -330,21 +381,25 @@ a.send-request::after {
     left: 20px;
     background-color: var(--black);
     transform-origin: bottom right;
-    transition: transform 0.0s ease;
+    transition: transform 0s ease;
 }
+
 a.send-request:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 /*styling for textarea in form section*/
-textarea {      
+textarea {
     padding: 15px;
-    margin-bottom: 1rem;       
+    margin-bottom: 1rem;
 }
+
 /*styling for select in form section*/
 select {
-    padding: 10px;    
+    padding: 10px;
 }
+
 /*container for test-ideas and remember to place them side by side*/
 .bottom-sections {
     display: flex;
@@ -353,6 +408,7 @@ select {
     margin: 15px auto;
     padding-bottom: 15px;
 }
+
 /*layout for test idea section*/
 .test-ideas {
     text-align: left;
@@ -361,31 +417,35 @@ select {
     border: var(--text-color) solid 2px;
     border-radius: 8px;
 }
+
 /*center the heading in test idea section*/
 .test-ideas h3 {
     text-align: center;
 }
+
 /*layout for remember section*/
 .remember {
     text-align: left;
     width: 380px;
-    padding: 20px;  
+    padding: 20px;
     border: var(--text-color) solid 2px;
     border-radius: 8px;
-}   
+}
+
 /*center the heading in remember section*/
 .remember h3 {
     text-align: center;
-}   
+}
+
 /* Hitta hit styling */
 
 .find-us-hero {
-        /*https://pixabay.com/photos/travel-pinned-pinning-maps-atlas-2650303/*/
-        background-image: url(../images/map.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 600px;
-        margin-bottom:  3rem;
+    /*https://pixabay.com/photos/travel-pinned-pinning-maps-atlas-2650303/*/
+    background-image: url(../images/map.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 3rem;
 }
 
 .find-us-title {
@@ -429,13 +489,15 @@ select {
 }
 
 /* Remove default styling on contact links replace with custom animated underline on hover */
-.find-us-contact a:link, .find-us-contact a:visited {
+.find-us-contact a:link,
+.find-us-contact a:visited {
     color: var(--text-color);
     text-decoration: none;
     position: relative;
 }
 
-.find-us-contact a:link::after, .find-us-contact a:visited:after{
+.find-us-contact a:link::after,
+.find-us-contact a:visited:after {
     content: "";
     position: absolute;
     left: 0;
@@ -443,7 +505,7 @@ select {
     width: 0%;
     height: 1px;
     background-color: var(--text-color);
-    transition: width 0.30s ease;
+    transition: width 0.3s ease;
 }
 
 .find-us-contact a:hover::after {
@@ -477,7 +539,7 @@ select {
     background-color: var(--mustard-yellow);
 }
 
-.faq-item summary{
+.faq-item summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -505,11 +567,11 @@ select {
 }
 
 /* Add different styling for when details summary unfolds */
-.faq-item[open]{
+.faq-item[open] {
     background-color: var(--mustard-yellow);
 }
 
-.faq-item[open] p{
+.faq-item[open] p {
     border-top: 1px solid var(--green);
     padding: 0.6rem 1rem;
     background-color: var(--light-mustard);
@@ -521,6 +583,7 @@ h1.galleryheading {
     justify-content: center;
     margin-top: 5rem;
 }
+
 div.gallery {
     display: flex;
     flex-wrap: wrap;
@@ -529,23 +592,35 @@ div.gallery {
     width: 80%;
     margin: 5rem auto;
 }
-.gallery1, .gallery2, .gallery3, .gallery4, .gallery5, .gallery6, .gallery7, .gallery8, .gallery9 {
+
+.gallery1,
+.gallery2,
+.gallery3,
+.gallery4,
+.gallery5,
+.gallery6,
+.gallery7,
+.gallery8,
+.gallery9 {
     padding: 1rem;
     width: 300px;
     height: 300px;
     border: 2px solid var(--green);
     border-radius: 8px;
 }
+
 img.gallery {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    transition: transform .2s;
+    transition: transform 0.2s;
 }
+
 img.gallery:hover {
-    transform: scale(1.25); 
+    transform: scale(1.25);
 }
+
 .gallery1 {
     display: flex;
     flex-direction: column;
@@ -554,6 +629,7 @@ img.gallery:hover {
     padding: 1rem;
     border: 2px solid var(--pink);
 }
+
 .gallery9 {
     display: flex;
     flex-direction: column;
@@ -562,16 +638,17 @@ img.gallery:hover {
     gap: 1rem;
     border: 2px solid var(--pink);
 }
+
 .gallerybold {
     font-weight: bold;
     font-size: 17px;
     display: flex;
     justify-content: center;
 }
-/*Layout for about*/
 
+/*Layout for about*/
 /*Layout for the different organisations*/
-.organisation{
+.organisation {
     margin: 20px auto;
     padding: 60px 20px;
     line-height: 1.8;
@@ -581,39 +658,39 @@ img.gallery:hover {
     align-items: center;
 }
 
-.organisation p{
+.organisation p {
     max-width: 700px;
     margin: 40px;
 }
 
-.organisation h2{
+.organisation h2 {
     margin-top: 5rem;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-.organisation h4{
+.organisation h4 {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
 /*Layout for the list with organisations*/
-.organisation ul{
-    border: 2px solid #D88198;
+.organisation ul {
+    border: 2px solid #d88198;
     border-radius: 100px;
     list-style: none;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.organisation li{
+.organisation li {
     display: inline-block;
     text-decoration: none;
     padding: 30px;
 }
 
 /*h1 style*/
-h1.tattoo-heading{
+h1.tattoo-heading {
     padding: 20px;
     margin-top: 0.25rem;
     margin-bottom: 20px;
@@ -621,7 +698,7 @@ h1.tattoo-heading{
 }
 
 /*Style for the container with all the tattoo artists*/
-.artist-container{
+.artist-container {
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -658,12 +735,12 @@ h1.tattoo-heading{
     width: 100%;
     height: 400px;
     object-fit: cover;
-    border: 2px solid #2D676D;
-    border-radius:10px;
+    border: 2px solid #2d676d;
+    border-radius: 10px;
 }
 
 /*Layout for the paragraphs about the tattoo artists*/
-.artist-description{
+.artist-description {
     text-align: left;
     margin-bottom: 10px;
 }
@@ -687,7 +764,8 @@ h1.tattoo-heading{
     padding: 0.5rem 0;
 }
 
-.footer-contact, .footer-hours,
+.footer-contact,
+.footer-hours,
 .footer-transportation {
     flex: 1;
     max-width: 400px;
@@ -699,13 +777,15 @@ h1.tattoo-heading{
 }
 
 /* Remove default styling on contact links replace with custom animated underline on hover */
-.footer-contact a:link, .footer-contact a:visited {
+.footer-contact a:link,
+.footer-contact a:visited {
     color: var(--black);
     text-decoration: none;
     position: relative;
 }
 
-.footer-contact a:link::after, .footer-contact a:visited::after {
+.footer-contact a:link::after,
+.footer-contact a:visited::after {
     content: "";
     position: absolute;
     left: 0;
@@ -713,7 +793,7 @@ h1.tattoo-heading{
     width: 0%;
     height: 1px;
     background-color: var(--black);
-    transition: width 0.30s ease;
+    transition: width 0.3s ease;
 }
 
 .footer-contact a:hover::after {
@@ -724,35 +804,41 @@ img.pin {
     height: 50px;
     padding: 0.25rem;
 }
+
 img.pin:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
+
 /*länk-styling*/
 a.animate:link {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  color: var(--text-color);
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
 }
+
 a.animate:link::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: -2px;
-  left: 0;
-  background-color: var(--black);
-  transform-origin: bottom right;
-  transition: transform 0.30s ease;
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--black);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
 }
+
 a.animate:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
+
 a.animate:visited {
     color: var(--pink);
 }
+
 /*Styling fake confirmation for the booking page*/
 .confirmation-page {
     display: flex;
@@ -762,15 +848,18 @@ a.animate:visited {
     font-family: var(--primary-font);
     text-align: center;
 }
+
 .confirmation-container {
     padding: 40px;
-    border: #D88198 solid 2px;
-    margin:auto 20px;
+    border: #d88198 solid 2px;
+    margin: auto 20px;
     border-radius: 8px;
 }
+
 .confirmation-heading {
     margin-bottom: 20px;
 }
+
 .confirmation-button {
     background-color: var(--pink);
     color: var(--black);
@@ -783,6 +872,7 @@ a.animate:visited {
     margin-top: 30px;
     position: relative;
 }
+
 .confirmation-button::after {
     content: "";
     position: absolute;
@@ -793,8 +883,9 @@ a.animate:visited {
     left: 20px;
     background-color: var(--black);
     transform-origin: bottom right;
-    transition: transform 0.30s ease;
+    transition: transform 0.3s ease;
 }
+
 .confirmation-button:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
