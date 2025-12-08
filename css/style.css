@@ -288,6 +288,14 @@ a.booknow:hover::after {
     text-align: center;
    
 }
+.textform{
+    font-weight: normal;
+    font-size: 1rem;
+    max-width: 60ch;
+    text-align: center;
+    display: block;
+    margin: auto auto 10px auto;
+}
 .pick-file {
     background-color: var(--pink);
     color: var(--black);
