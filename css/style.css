@@ -556,6 +556,9 @@ img.gallery:hover {
 }
 .gallerybold {
     font-weight: bold;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
 }
 /*Layout for about*/
 
