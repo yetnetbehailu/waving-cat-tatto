@@ -575,11 +575,11 @@ img.gallery:hover {
 
 .organisation p{
     max-width: 700px;
-    margin: 40px;
+    margin: 10px;
 }
 
 .organisation h2{
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -595,19 +595,20 @@ img.gallery:hover {
     border-radius: 100px;
     list-style: none;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .organisation li{
     display: inline-block;
     text-decoration: none;
     padding: 30px;
+    margin-bottom: 10px;
 }
 
 /*h1 style*/
 h1.tattoo-heading{
-    padding: 20px;
-    margin-top: 0.25rem;
+    padding: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
