@@ -24,17 +24,17 @@ html {
     color: var(--text-color);
 }
 
-.h1 {
+h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.h2 {
+h2 {
     font-size: 1.6rem;
     margin-bottom: 20px;
 }
 
-.h3 {
+h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
@@ -330,21 +330,18 @@ a.booknow:hover::after {
 .form {
     font-weight: normal;
     font-size: 1rem;
-    margin: auto auto 10px auto;
+    margin: auto auto 20px auto;
     width: 60ch;
     text-align: center;
    
 }
-
-.textform {
-    font-weight: normal;
+.formstrong {
+    font-weight: bold;
     font-size: 1rem;
-    max-width: 60ch;
+    margin: auto auto 20px auto;
+    width: 60ch;
     text-align: center;
-    display: block;
-    margin: auto auto 10px auto;
-}
-
+}  
 .pick-file {
     background-color: var(--pink);
     color: var(--black);
