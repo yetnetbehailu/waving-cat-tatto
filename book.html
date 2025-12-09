@@ -44,13 +44,11 @@
             <div class="form-section">
                 <form class="form-information">
                     <label for="tatto-description">Beskriv ditt motiv:</label><br>
-                    <label for="tatto-description" class="textform">Berätta gärna med egna ord vad du vill tatuera. Det kan vara allt från ett tydligt motiv till en känsla eller symbol.</label>
+                    <p class="form">Berätta gärna med egna ord vad du vill tatuera.<br> Det kan vara allt från ett tydligt motiv till en känsla eller symbol.</p>
                     <textarea rows="4" cols="65" id="tatto-description" name="tatto-description" placeholder="Skriv din beskrivning här..."></textarea><br><br>
-                    <label for="reference-images">Ladda upp referensbilder: </label>
-                    <p class="form">Det hjälper oss att förstå stil och uttryck. Du kan ladda upp bilder direkt i bokningsformuläret eller länka till bilder du inspireras av.</p>
-                    <input type="file" id="reference-images" name="reference-images" accept="image/*" multiple style="display: none;">
-                    <label for="reference-images" class="pick-file">Välj filer</label>
-                    <span id="file-names" class="form"></span><br><br><br>
+                    <label for="pick-image">Ladda upp referensbilder: </label>
+                    <p class="form">Det hjälper oss att förstå stil och uttryck. Du kan ladda upp bilder direkt i bokningsformuläret eller länka till bilder du inspireras av.</p>                    
+                    <input id="pick-image" class="pick-file" type="button" value="Välj filer"><br><br><br>
                     <label for="tattoo-artist">Välj tatuerare:</label>
                     <p class="form"> Om du redan vet vem du vill gå till - skriv det. Om du är osäker hjälper vi dig hitta den tatuerare vars stil passar din idé bäst.</p>
                     <select id="tattoo-artist" name="tattoo-artist">
@@ -61,9 +59,9 @@
                         <option value="sophie">Sophie</option>
                     </select><br><br><br>
                     <label for="placement-size">Placering & storlek:</label><br>
-                    <label for="placement-size" class="textform">Ungefärlig placering på kroppen och ungefärlig storlek i centimeter eller jämförelse (t.ex. "handflata stor").</label>
+                    <p class="form">Ungefärlig placering på kroppen och ungefärlig storlek i centimeter eller jämförelse (t.ex. "handflata stor").</p>
                     <textarea rows="4" cols="65" id="placement-size" name="placement-size" placeholder="T.ex. 'Överarmen, ca 10 cm'"></textarea><br><br>
-                    <label>När vi fått din förfrågan återkommer vi med ungefärligt pris, <br>hur lång tid tatueringen tar och förslag på tider.</label><br><br>
+                    <p class="formstrong">När vi fått din förfrågan återkommer vi med ungefärligt pris, <br>hur lång tid tatueringen tar och förslag på tider.</p>
                     <a id="click-send-request" href="confirmation.html" target="_blank" class="send-request" onclick="window.open('confirmation.html', '_blank', 
                         'width=800,height=400,top=250,left=400,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,status=no');">Skicka förfrågan</a>
                 </form>
