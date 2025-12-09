@@ -128,8 +128,8 @@ header nav ul li a:hover::after {
 .inclusion,
 .care {
     font-size: 1.1rem;
-    color: var(--black);
-    background-color: rgb(252, 218, 218, 0.6);
+    color: var( --black);
+    background-color:rgb(252, 218, 218, 0.6);
     padding: 10px 20px;
     margin-top: 200px;
     border-radius: 5px;
@@ -251,13 +251,12 @@ a.booknow:hover::after {
     text-align: center;
     margin-bottom: 10px;
 }
-
+ 
 /*start for the layout of the book.html page*/
 .book-appointment {
     text-align: center;
     padding: 20px;
 }
-
 /* layout for hero image */
 .hero-book-page {
     animation: slideshow 45s infinite;
@@ -269,7 +268,6 @@ a.booknow:hover::after {
     height: 600px;
     margin-bottom: 3rem;
 }
-
 /* slideshow animation for hero image */
 @keyframes slideshow {
     0% {
@@ -335,6 +333,7 @@ a.booknow:hover::after {
     margin: auto auto 10px auto;
     width: 60ch;
     text-align: center;
+   
 }
 
 .textform {
@@ -655,8 +654,15 @@ img.gallery:hover {
     display: flex;
     justify-content: center;
 }
-
-/*Layout for about*/
+/*About us style*/
+/*h1 style*/
+h1.tattoo-heading{
+    padding: 20px;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+}
 /*Layout for the different organisations*/
 .organisation {
     margin: 20px auto;
@@ -670,12 +676,12 @@ img.gallery:hover {
 
 .organisation p {
     max-width: 700px;
-    margin: 10px;
+    margin: 30px;
 }
 
 .organisation h2{
-    margin-top: 2rem;
-    font-size: 30px;
+    margin-top: 1rem;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
@@ -690,22 +696,13 @@ img.gallery:hover {
     border-radius: 100px;
     list-style: none;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .organisation li {
     display: inline-block;
     text-decoration: none;
     padding: 30px;
-    margin-bottom: 10px;
-}
-
-/*h1 style*/
-h1.tattoo-heading{
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 /*Style for the container with all the tattoo artists*/
@@ -716,6 +713,12 @@ h1.tattoo-heading{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.artist-container h2{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
 }
 
 /*Style for the artist header/artist row*/
@@ -862,8 +865,8 @@ a.animate:visited {
 
 .confirmation-container {
     padding: 40px;
-    border: #d88198 solid 2px;
-    margin: auto 20px;
+    border: #D88198 solid 2px;
+    margin:auto 20px;
     border-radius: 8px;
 }
 
